@@ -91,4 +91,15 @@ func main() {
 	println(book[4:11])
 	println(book[4:])
 
+	// Milti line
+	poem := `
+		yare dabestanie man 
+		ba man o hamrah mani
+		chob alef bar sare ma 
+		boghze man o ah mani 
+		....
+	`
+
+	println(poem)
+
 }
