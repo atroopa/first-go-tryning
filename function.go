@@ -47,11 +47,22 @@ func main() {
 	b := 20.0
 
 	if frac := a / b; frac > 0.5 {
-		println("a is more than half b")
+		fmt.Println("a is more than half b")
 	}
 
-	// ========================================
+	// function
 	SwitchStatement()
+
+	// for Loop
+	for i := 0; i <= 10; i++ {
+
+		if i > 5 {
+			break
+		}
+
+		println(i)
+	}
+
 }
 
 func SwitchStatement() {
