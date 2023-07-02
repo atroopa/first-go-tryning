@@ -4,6 +4,22 @@ import (
 	"fmt"
 )
 
+func SwitchStatement() {
+	x_number := 2
+
+	switch x_number {
+	case 1:
+		println("One")
+	case 2:
+		println("Two")
+	case 3:
+		println("three")
+	default:
+		println("many")
+	}
+
+}
+
 func main() {
 	// var x float64
 	// var y float64
@@ -56,27 +72,23 @@ func main() {
 	// for Loop
 	for i := 0; i <= 10; i++ {
 
-		if i > 5 {
-			break
+		if i < 5 {
+			continue
 		}
 
 		println(i)
 	}
 
-}
+	println("============================")
 
-func SwitchStatement() {
-	x_number := 2
+	//String
+	book := "Yare dabestanie man"
 
-	switch x_number {
-	case 1:
-		println("One")
-	case 2:
-		println("Two")
-	case 3:
-		println("three")
-	default:
-		println("many")
-	}
+	println(book)
+	println(len(book))
+	fmt.Printf("book[0] = %v (type):%T \n", book[0], book[0])
+
+	println(book[4:11])
+	println(book[4:])
 
 }
