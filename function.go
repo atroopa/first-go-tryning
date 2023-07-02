@@ -50,4 +50,22 @@ func main() {
 		println("a is more than half b")
 	}
 
+	// ========================================
+	SwitchStatement()
+}
+
+func SwitchStatement() {
+	x_number := 2
+
+	switch x_number {
+	case 1:
+		println("One")
+	case 2:
+		println("Two")
+	case 3:
+		println("three")
+	default:
+		println("many")
+	}
+
 }
