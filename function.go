@@ -102,4 +102,31 @@ func main() {
 
 	println(poem)
 
+	println("=====================================")
+
+	bar := map[string]float64{
+		"google":    1130.54,
+		"amazon":    2365.98,
+		"microsoft": 2098.76,
+	}
+
+	fmt.Println(bar["google"])
+	bar["apple"] = 2345.32
+	delete(bar, "microsoft")
+	fmt.Println(bar)
+
+	value, ok := bar["apple"]
+
+	if !ok {
+		println("apple is not Found")
+	} else {
+		fmt.Printf("%v \n", value)
+	}
+
+	println("========================================")
+
+	foo := []string{"omid", "navid", "ayhana"}
+
+	println(foo[0])
+
 }
