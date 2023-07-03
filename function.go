@@ -133,4 +133,8 @@ func main() {
 
 	println(foo[0])
 
+	// Append in go
+	foo = append(foo, "vahid")
+
+	fmt.Println(foo)
 }
