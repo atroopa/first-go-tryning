@@ -123,6 +123,10 @@ func main() {
 		fmt.Printf("%v \n", value)
 	}
 
+	for key := range bar {
+		fmt.Printf("a day: %v \n", key)
+	}
+
 	println("========================================")
 
 	foo := []string{"omid", "navid", "ayhana"}
